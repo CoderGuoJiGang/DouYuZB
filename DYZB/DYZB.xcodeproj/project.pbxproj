@@ -97,6 +97,7 @@
 		DA00375E1D9182F4002B3787 /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				DA00378D1D92BA05002B3787 /* Classes */,
 				DA00375F1D9182F4002B3787 /* AppDelegate.swift */,
 				DA0037611D9182F4002B3787 /* ViewController.swift */,
 				DA0037631D9182F4002B3787 /* Main.storyboard */,
@@ -123,6 +124,61 @@
 				DA0037811D9182F4002B3787 /* Info.plist */,
 			);
 			path = DYZBUITests;
+			sourceTree = "<group>";
+		};
+		DA00378D1D92BA05002B3787 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA0037931D92BAAB002B3787 /* Tools */,
+				DA0037921D92BA95002B3787 /* Profile */,
+				DA0037911D92BA7E002B3787 /* Fellow */,
+				DA0037901D92BA69002B3787 /* Live */,
+				DA00378F1D92BA56002B3787 /* Home */,
+				DA00378E1D92BA34002B3787 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DA00378E1D92BA34002B3787 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DA00378F1D92BA56002B3787 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA0037901D92BA69002B3787 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		DA0037911D92BA7E002B3787 /* Fellow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fellow;
+			sourceTree = "<group>";
+		};
+		DA0037921D92BA95002B3787 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DA0037931D92BAAB002B3787 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +541,7 @@
 				DA0037861D9182F4002B3787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA0037871D9182F4002B3787 /* Build configuration list for PBXNativeTarget "DYZBTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +550,7 @@
 				DA0037891D9182F4002B3787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA00378A1D9182F4002B3787 /* Build configuration list for PBXNativeTarget "DYZBUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +559,7 @@
 				DA00378C1D9182F4002B3787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
