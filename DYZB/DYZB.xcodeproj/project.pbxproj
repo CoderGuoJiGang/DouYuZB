@@ -100,7 +100,6 @@
 				DA00378D1D92BA05002B3787 /* Classes */,
 				DA00375F1D9182F4002B3787 /* AppDelegate.swift */,
 				DA0037611D9182F4002B3787 /* ViewController.swift */,
-				DA0037631D9182F4002B3787 /* Main.storyboard */,
 				DA0037661D9182F4002B3787 /* Assets.xcassets */,
 				DA0037681D9182F4002B3787 /* LaunchScreen.storyboard */,
 				DA00376B1D9182F4002B3787 /* Info.plist */,
@@ -129,12 +128,12 @@
 		DA00378D1D92BA05002B3787 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DA0037931D92BAAB002B3787 /* Tools */,
-				DA0037921D92BA95002B3787 /* Profile */,
-				DA0037911D92BA7E002B3787 /* Fellow */,
-				DA0037901D92BA69002B3787 /* Live */,
-				DA00378F1D92BA56002B3787 /* Home */,
 				DA00378E1D92BA34002B3787 /* Main */,
+				DA00378F1D92BA56002B3787 /* Home */,
+				DA0037901D92BA69002B3787 /* Live */,
+				DA0037911D92BA7E002B3787 /* Fellow */,
+				DA0037921D92BA95002B3787 /* Profile */,
+				DA0037931D92BAAB002B3787 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -142,6 +141,7 @@
 		DA00378E1D92BA34002B3787 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DA0037631D9182F4002B3787 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -358,6 +358,7 @@
 				DA0037641D9182F4002B3787 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		DA0037681D9182F4002B3787 /* LaunchScreen.storyboard */ = {
@@ -456,7 +457,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guojigang.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,7 +470,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guojigang.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
