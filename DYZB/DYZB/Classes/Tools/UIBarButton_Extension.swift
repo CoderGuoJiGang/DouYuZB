@@ -21,16 +21,16 @@ extension UIBarButtonItem{
     }*/
     
     // 构造函数
-    convenience init(imageName:String ,highImage:String = "", size:CGSize = CGSizeZero) {
+    convenience init(imageName:String ,highImage:String = "", size:CGSize = CGSize.zero) {
         let btn = UIButton()
-        btn.setImage(UIImage(named: imageName), forState: .Normal)
+        btn.setImage(UIImage(named: imageName), for: UIControlState())
         if highImage != ""{
-            btn.setImage(UIImage(named: highImage), forState: .Highlighted)
+            btn.setImage(UIImage(named: highImage), for: .highlighted)
         }
         
         
-        if size != CGSizeZero{
-        btn.frame = CGRect(origin: CGPointZero, size: size)
+        if size != CGSize.zero{
+        btn.frame = CGRect(origin: CGPoint.zero, size: size)
         } else {
             btn.sizeToFit()
         }

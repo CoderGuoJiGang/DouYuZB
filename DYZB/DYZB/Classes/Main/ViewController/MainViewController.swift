@@ -20,7 +20,7 @@ class MainViewController: UITabBarController {
         
     }
     
-    private func addChildVc(storyBoradName:String){
+    fileprivate func addChildVc(_ storyBoradName:String){
         // 创建控制器
         let childVc = UIStoryboard(name: storyBoradName, bundle: nil).instantiateInitialViewController()!
         

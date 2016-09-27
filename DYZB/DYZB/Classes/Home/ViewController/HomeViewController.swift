@@ -12,14 +12,15 @@ private let kTitleViewH : CGFloat = 40;
 
 class HomeViewController: UIViewController {
     // MARK:- 懒加载属性
-    private lazy var pageTitleView : PageTitleView = {
+    fileprivate lazy var pageTitleView : PageTitleView = { [weak self] in
         let titleFrame = CGRect(x: 0, y: kNavigationBarH + kStatusBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        titleView.delegate = self
         return titleView
     }()
     
-    private lazy var pageContentView : PagecontentView = {
+    fileprivate lazy var pageContentView : PagecontentView = { [weak self] in
         // 1.确定内容的frame
         let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
@@ -33,6 +34,7 @@ class HomeViewController: UIViewController {
         }
         
         let contentView = PagecontentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
+        contentView.delegate = self
         return contentView
     }()
     override func viewDidLoad() {
@@ -51,7 +53,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController{
     
   
-    private func setupUI(){
+    fileprivate func setupUI(){
         
         // 不需要调整UIscrollView.的内编剧
         automaticallyAdjustsScrollViewInsets = false
@@ -64,11 +66,11 @@ extension HomeViewController{
         
         // 3.添加contentView
         view.addSubview(pageContentView)
-        pageContentView.backgroundColor = UIColor.purpleColor()
+        pageContentView.backgroundColor = UIColor.purple
         
     }
     
-    private func setupNavigationBar(){
+    fileprivate func setupNavigationBar(){
     // 设置左边的item
 //        let btn = UIButton()
 //        btn.setImage(UIImage(named: "logo"), forState: .Normal)
@@ -78,7 +80,7 @@ extension HomeViewController{
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
         // 设置右边item
-        let size = CGSizeMake(40, 40)
+        let size = CGSize(width: 40, height: 40)
 //        let historyBtn = UIButton()
 //        historyBtn.setImage(UIImage(named: "image_my_history"), forState: .Normal)
 //        historyBtn.setImage(UIImage(named: "image_my_history_click"), forState: .Highlighted)
@@ -105,5 +107,20 @@ extension HomeViewController{
         
         navigationItem.rightBarButtonItems = [historyItem,searchItem,qrcodeItem]
 //        navigationItem.setRightBarButtonItems([historyItem,searchItem,qrcodeItem], animated: )
+    }
+}
+
+// MARK: - 遵守pageTitleViewDelegate协议
+extension HomeViewController : PageTitleViewDelegate{
+    func pageTitleView(titleView: PageTitleView, selectedIndex: Int) {
+            pageContentView.setCurrentIndex(currentIndex: selectedIndex)
+    }
+}
+
+
+// MARK: - 遵守pageContentViewDelegate
+extension HomeViewController : PagecontentViewDelegate{
+    func pageContentView(contentView: PagecontentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetInde: targetIndex)
     }
 }

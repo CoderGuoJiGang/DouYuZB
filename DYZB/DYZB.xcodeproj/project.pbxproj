@@ -331,15 +331,18 @@
 					DA00375B1D9182F4002B3787 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = DL8J4DD62Z;
+						LastSwiftMigration = 0800;
 					};
 					DA00376F1D9182F4002B3787 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = DL8J4DD62Z;
+						LastSwiftMigration = 0800;
 						TestTargetID = DA00375B1D9182F4002B3787;
 					};
 					DA00377A1D9182F4002B3787 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = DL8J4DD62Z;
+						LastSwiftMigration = 0800;
 						TestTargetID = DA00375B1D9182F4002B3787;
 					};
 				};
@@ -541,11 +544,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = DL8J4DD62Z;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = guojigang.DYZB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juehuo.zz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -554,11 +559,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = DL8J4DD62Z;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = guojigang.DYZB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juehuo.zz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -570,6 +577,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guojigang.DYZBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYZB.app/DYZB";
 			};
 			name = Debug;
@@ -582,6 +590,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guojigang.DYZBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYZB.app/DYZB";
 			};
 			name = Release;
@@ -593,6 +602,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guojigang.DYZBUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DYZB;
 				USES_XCTRUNNER = YES;
 			};
@@ -605,6 +615,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guojigang.DYZBUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DYZB;
 				USES_XCTRUNNER = YES;
 			};
