@@ -33,6 +33,7 @@ class PagecontentView: UIView {
         
         // 创建UICollectionView
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+//        collectionView.backgroundColor = UIColor.orange
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.isPagingEnabled = true
         collectionView.bounces = false

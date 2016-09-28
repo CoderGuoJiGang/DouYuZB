@@ -96,7 +96,6 @@ extension PageTitleView{
             // 设置frame
             let labelX:CGFloat = labelW * CGFloat(index)
             lable.frame = CGRect(x: labelX, y: labelY, width: labelW, height: labelH)
-            print(CGRect(x: labelX, y: labelY, width: labelW, height: labelH))
             // label添加到scrollView
             scrollView.addSubview(lable)
             titleLables.append(lable)
